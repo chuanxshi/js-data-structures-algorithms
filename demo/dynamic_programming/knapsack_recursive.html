@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Knapsack Recursive</title>
+</head>
+<body>
+  <script type="module">
+  	import {knapSack} from '../../src/algorithm/dp/knapsack_recursive.js';
+  	
+		const values = [3,4,5], 
+          weights = [2,3,4], 
+          capacity = 5, 
+          n = values.length; 
+    
+    console.log(knapSack(capacity, weights, values, n)); 
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+  <script type="module">
+  	import {dijkstra} from '../../src/algorithm/graph/dijkstra.js';
+
+  	var graph = [
+  		[0, 2, 4, 0, 0, 0], 
+        [0, 0, 1, 4, 2, 0], 
+        [0, 0, 0, 0, 3, 0], 
+        [0, 0, 0, 0, 0, 2], 
+        [0, 0, 0, 3, 0, 2], 
+        [0, 0, 0, 0, 0, 0]
+    ];
+    
+	console.log("********* Dijkstra's Algorithm - Shortest Path ***********");
+
+	const dist = dijkstra(graph, 0);
+
+	for (let i = 0; i < dist.length; i++){
+	    console.log(i + '\t\t' + dist[i]);
+	}
+  </script>
+</body>
+</html>

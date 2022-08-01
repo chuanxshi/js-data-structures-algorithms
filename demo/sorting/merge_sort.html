@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Merge Sort</title>
+</head>
+<body>
+  <script type="module">
+  	import {mergeSort} from '../../src/algorithm/sort/merge_sort.js';
+  	
+		function createNonSortedArray(){
+		  var array = [];
+		  for (let i = 5; i > 0; i--){
+		      array.push(i);
+		  }
+		  return array;
+		}
+
+		const array = mergeSort(createNonSortedArray());
+		console.log(array);
+
+	</script>
+
+</body>
+</html>

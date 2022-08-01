@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Radix Sort</title>
+</head>
+<body>
+  <script type="module">
+  	import {radixSort} from '../../src/algorithm/sort/radix_sort.js';
+  	
+		function createNonSortedArray(){
+		  var array = [];
+		  for (let i = 5; i > 0; i--){
+		      array.push(i);
+		  }
+		  return array;
+		}
+
+		const array = radixSort(createNonSortedArray());
+		console.log(array);
+
+	</script>
+
+</body>
+</html>

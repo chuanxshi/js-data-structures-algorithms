@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Interpolation Search 插值查找</title>
+</head>
+<body>
+  <script type="module">
+  	import {interpolationSearch} from '../../src/algorithm/search/interpolation_search.js';
+  	
+		function createNonSortedArray(){
+		  var array = [];
+		  for (let i = 10; i > 0; i--){
+		      array.push(i);
+		  }
+		  return array;
+		}
+
+		const searchResult = interpolationSearch(createNonSortedArray());
+		console.log(searchResult);
+
+	</script>
+
+</body>
+</html>

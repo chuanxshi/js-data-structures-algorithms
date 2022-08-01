@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+  <script type="module">
+  	import {selectionSort} from '../../src/algorithm/sort/selection_sort.js';
+  	
+		function createNonSortedArray(){
+		  var array = [];
+		  for (let i = 5; i > 0; i--){
+		      array.push(i);
+		  }
+		  return array;
+		}
+
+		const array = selectionSort(createNonSortedArray());
+		console.log(array);
+
+	</script>
+
+</body>
+</html>

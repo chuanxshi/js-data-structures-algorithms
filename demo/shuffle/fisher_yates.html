@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sequetial Search</title>
+</head>
+<body>
+  <script type="module">
+  	import {shuffle} from '../../src/algorithm/shuffle/fisher_yates.js';
+  	
+		function createNonSortedArray(){
+		  var array = [];
+		  for (let i = 10; i > 0; i--){
+		      array.push(i);
+		  }
+		  return array;
+		}
+
+		const shuffleResult = shuffle(createNonSortedArray(), 3);
+		console.log(shuffleResult);
+
+	</script>
+
+</body>
+</html>

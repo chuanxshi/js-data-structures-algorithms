@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Quick Sort</title>
+</head>
+<body>
+  <script type="module">
+  	import {quickSort} from '../../src/algorithm/sort/quick_sort.js';
+  	
+		function createNonSortedArray(){
+		  var array = [];
+		  for (let i = 5; i > 0; i--){
+		      array.push(i);
+		  }
+		  return array;
+		}
+
+		const array = quickSort(createNonSortedArray());
+		console.log(array);
+
+	</script>
+
+</body>
+</html>

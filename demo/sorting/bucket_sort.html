@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bucket Sort</title>
+</head>
+<body>
+  <script type="module">
+  	import {bucketSort} from '../../src/algorithm/sort/bucket_sort.js';
+  	
+		function createNonSortedArray(){
+		  var array = [];
+		  for (let i = 5; i > 0; i--){
+		      array.push(i);
+		  }
+		  return array;
+		}
+
+		const array = bucketSort(createNonSortedArray());
+		console.log(array);
+
+	</script>
+
+</body>
+</html>
